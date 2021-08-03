@@ -1,0 +1,82 @@
+/*Nav Styles */
+.ct-nav{
+    display: flex;
+    justify-content: center
+}
+
+/* Target logo */
+.ct-nav img{
+    width:17%;
+    max-width:100%;
+    margin-left: 20vw;
+    padding-top:1vw ;
+    
+}
+#horizontal-list{
+    min-width: 75vw;
+    list-style: none;
+    padding-top: 2vw
+}
+
+#horizontal-list li, #horizontal-list a{
+    display: inline;
+    text-decoration: none;
+    padding: 1vw;
+    color: black;
+
+}
+
+#horizontal-list a:nth-last-child(1){
+    border: 3px solid pink;
+    border-radius: 11px;
+    margin-right: 0.2vw;
+}
+/* End of Nav Styles */
+
+/* Start of the header section*/
+#header-text{
+    padding: 7vw;
+    padding-top: 10vw;
+    padding-right: 1vw;
+    
+}
+
+#header-text h2{
+    padding-top:1vw;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+#header-text h5{
+    padding-top:1vw;
+    padding-bottom: 4vw;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+
+.header-image{
+    padding-top: 5vw;
+    width: 85%;
+    max-width: 100%;
+}
+
+
+
+/* End of Header/Hero Section */
+
+/* start of middle section */
+.row h2{
+    padding-top: 7vw;
+    display: flex;
+    justify-content: center;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+
+}
+
+.row p{
+    padding: 3vw;
+
+    display: flex;
+    justify-content: center;
+    font-family:fantasy;
+    font-size: 16px;
+}
