@@ -1,4 +1,4 @@
-from flask_sqlalchemy import SQLALchemy
+from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from datetime import datetime
 import uuid
@@ -10,14 +10,14 @@ from werkzeug.security import generate_password_hash
 #creates hex token for our API access
 import secrets 
 
-db = SQLALchemy()
+db = SQLAlchemy()
 
 class User(db.Model):
     id = db.Column(db.String, primary_key= True)
     email = db.Column(db.String(150), nullable= False)
     password =db.Column(db.String, nullable=True)
     token= db.Column(db.String, unique= True, default ='')
-    date_created = db.Column(db.DateTime, nullable = False, default = datetime.utcow)
+    date_created = db.Column(db.DateTime, nullable = False, default = datetime.utcnow)
 
     def __init__(self,email, password, token='', id=''):
         self.id=self.set_id()
