@@ -30,11 +30,11 @@
               <a href="">
                   <li>Items</li>
               </a>
-              <a href="">
-                  <li>Sign Up</li>
+              <a href="{{ url_for('auth.signin') }}">
+                  <li>Sign In</li>
               </a>
-              <a href="">
-                <li>Log In</li>
+              <a href="{{ url_for('auth.signup') }}">
+                <li>Sign Up</li>
             </a>
           </ul>
       </div>
